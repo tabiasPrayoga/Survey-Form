@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+      <!-- Name -->
+      <label for="name" id="name-label">
+        Name
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </label>
+      <!-- Email -->
+      <label for="Email" id="email-label">
+        Email
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </label>
+      <!-- Age -->
+      <label for="number" id="number-label">
+        Age
+        <input type="number" name="age" min="12" max="65" id="number" placeholder="How old are you?" />
+      </label>
+      <!-- Option Explain -->
+      <label for="dropdown" id="dropdown-label">
+        Which option best describes your current role?
+        <select id="dropdown-label">
+          <option disabled selected value="">Select curent role</option>
+          <option value="Student">Student</option>
+          <option value="Full Time Job">Full Time Job</option>
+          <option value="Full Time Learner">Full Time Learner</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+      <!-- Recommended Options -->
+      <label for="rOption" id="rOption-label">Would you recommend freeCodeCamp to a friend?</label>
+      <input type="radio" name="rOption" value="definitely" checked /><i>Definitely</i> <input type="radio" name="rOption" value="maybe" /><i>Maybe</i> <input type="radio" name="rOption" value="not-sure" /><i>Not sure</i> <br /><br />
+      <!-- Favorite Feature Option -->
+      <label for="dropdown" id="dropdown">
+        What is your favorite feature of freeCodeCamp?
+        <select id="dropdown">
+          <option disabled selected value="">Select an option</option>
+          <option value="Student">Challanges</option>
+          <option value="Full Time Job">Projects</option>
+          <option value="Full Time Learner">Community</option>
+          <option value="Prefer not to say">Open Source</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+      <!-- Improved Option -->
+      <label for="iOption" id="iOption-label">What would you like to see improved?</label>
+      <input type="checkbox" value="front-end-projects" /><i>Front-end Projects</i> <br />
+      <input type="checkbox" value="back-end-Projects" /><i>Back-end Projects</i> <br />
+      <input type="checkbox" value="data-pisualization" /><i>Data Visualization</i> <br />
+      <input type="checkbox" value="challenges" /><i>Challenges</i> <br />
+      <input type="checkbox" value="open-source-community" /><i>Open Source Community</i> <br />
+      <input type="checkbox" value="gitter-help-rooms" /><i>Gitter help rooms</i> <br />
+      <input type="checkbox" value="videos" /><i>Videos</i> <br />
+      <input type="checkbox" value="city-meetups" /><i>City Meetups</i> <br />
+      <input type="checkbox" value="wiki" /><i>Wiki</i> <br />
+      <input type="checkbox" value="forum" /><i>Forum</i> <br />
+      <input type="checkbox" value="additional-courses" /><i>Additional Courses</i> <br />
+      <!-- comments -->
+      <label for="comments" id="comments-label">
+        Any comments or suggestions?
+        <textarea id="comments" cols="30" rows="10"></textarea>
+      </label>
+      <!-- Submit -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
